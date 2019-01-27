@@ -1,0 +1,72 @@
+body{
+  font-family: "Hiragino Maru Gothic Pro", Meiryo, sans-serif;
+  background: #c0deed ;
+}
+
+.click{
+  text-align: center ;
+  line-height: 30px;
+  height:30px ;
+  background: #00aeedd3 ;
+  color: white ;
+  border-bottom: 1px solid #c0deed;
+  cursor:pointer ;
+  user-select: none ;
+}
+
+.container{
+  width:600px ;
+  height: 1200px  ;
+  margin: 0 auto ;
+  background:white;
+}
+
+.message{
+  padding:5px 5px 20px 5px  ;
+  margin-bottom: 20px ;
+  border-bottom: 1px solid #c0deed;
+  animation: fadeIn 1s ;
+}
+
+.message:after{
+  clear: both ;
+  content:'';
+  display:block ;
+}
+
+.content{
+  height: 80% ;
+  float: left ;
+}
+
+.name{
+  padding-top: 5px ;
+  font-weight: bold;
+}
+
+.icon{
+  display: flex ;
+  width: 10% ;
+  float: left ;
+  height :auto ;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img{
+  max-width: 80%;
+  width: auto ;
+  height:50px ;
+  border-radius:80px ;
+  border: 2px solid rgba(128, 128, 128, 0.082) ;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0 ;
+  }
+  100%{
+    opacity: 1 ;
+  }
+}
